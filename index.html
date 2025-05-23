@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop Functionality Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Laptop Functionality Checker</h1>
+
+    <section id="camera-test">
+        <h2>Camera Test</h2>
+        <video id="webcam-feed" autoplay playsinline></video>
+        <button id="start-camera-btn">Start Camera</button>
+        <p id="camera-status"></p>
+    </section>
+
+    <section id="keyboard-test">
+        <h2>Keyboard Test</h2>
+        <textarea id="keyboard-input" placeholder="Type here to test your keyboard..." rows="5" cols="50"></textarea>
+        <div id="pressed-keys"></div>
+    </section>
+
+    <section id="mouse-test">
+        <h2>Mouse Test</h2>
+        <canvas id="mouse-canvas" width="400" height="200" style="border: 1px solid black;"></canvas>
+        <p>Click and drag inside the box above.</p>
+        <p id="mouse-status"></p>
+    </section>
+
+    <section id="speaker-test">
+        <h2>Speaker Test</h2>
+        <button id="play-sound-btn">Play Test Sound</button>
+        <p id="speaker-status"></p>
+        <audio id="test-audio" src="test-sound.mp3" preload="auto"></audio> </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
